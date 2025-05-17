@@ -11,9 +11,10 @@ rotItems[defaultRotItem] = true
 
 
 local rotAgingScripts = {}
+
 local patchPath = "/pat/norotting/patch.json"
-local patch = { {}, {{op = "add", path = "/pat_norotting", value = true}} }
-local ops = patch[1]
+local patch = config.basePatch
+local ops = {}; patch[#patch + 1] = ops
 
 for i = 1, #config.rotAgingScripts do
   local script = config.rotAgingScripts[i]
@@ -21,6 +22,7 @@ for i = 1, #config.rotAgingScripts do
 
   ops[#ops + 1] = {op = "remove", path = "/itemAgingScripts", search = script}
 end
+
 assetAdd(patchPath, patch)
 
 
