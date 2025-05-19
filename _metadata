@@ -1,5 +1,14 @@
 {
-  "scripts": {
-    "postLoad": [ "/pat/norotting/postload.lua" ]
-  }
+  "author" : "patman",
+  "description" : "food but it doesnt rot\n\nuses an openstarbound postload script to patch all foods ever. probably.\nand also hopefully without breaking other mods\n\nit also should clean up rotting-related parameters from existing items",
+  "friendlyName" : "No Food Rotting [OpenSB]",
+  "link" : "steam://url/CommunityFilePage/3484110634",
+  "name" : "pat_nofoodrot",
+  "scripts" : {
+    "postLoad" : ["/pat/norotting/postload.lua"]
+  },
+  "steamContentId" : "3484110634",
+  "steamDescription" : "food but it doesnt rot\nrequires [url=https://github.com/OpenStarbound/OpenStarbound]OpenStarbound[img]https://i.imgur.com/GlY6bda.png[/img][/url]\n\nuses an openstarbound postload script to patch all foods ever. probably.\nand also hopefully without breaking other mods\n\nit also should clean up rotting-related parameters from existing items\n\nyou probably shouldn't use this with other mods that try to remove rotting\n\n[img]https://i.imgur.com/wXjYMqP.gif[/img]https://discord.gg/GdsQSgV\n[img]https://i.imgur.com/uyG8oTa.gif[/img]https://www.patreon.com/pathiccstar\n[img]https://i.imgur.com/xVfcRRH.gif[/img]https://ko-fi.com/patmanf\n[img]https://i.imgur.com/jJAj6jF.gif[/img]https://github.com/bongus-jive/no-food-rot\n\n\nalso Duxtorm made the thumbnail! sorta!\ni kinda ended up editing it a lot .but thanks Duxtorm it was really helpful !! . the nugget on life support made me giggle.\n[img]https://cdn.discordapp.com/emojis/1139424798489980958.png?size=32[/img]",
+  "tags" : "Food and Farming",
+  "version" : "1.0"
 }
