@@ -13,6 +13,10 @@ function build(directory, config, params, level, seed)
 
     if params.tooltipFields then
       jremove(params.tooltipFields, "rotTimeLabel")
+      
+      if jsize(params.tooltipFields) == 0 then
+        jremove(params, "tooltipFields")
+      end
     end
   end
 
